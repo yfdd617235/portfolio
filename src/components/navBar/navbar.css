@@ -1,0 +1,16 @@
+/* .mr-auto {
+    border: solid red; 
+} */
+
+.link{
+    /* border: solid yellow; */
+    text-decoration: none;
+    color: rgb(200, 199, 255);
+    padding: 1%;
+    
+}
+
+.link:hover{
+    border: solid white;
+    
+}

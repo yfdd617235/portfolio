@@ -1,15 +1,18 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import './navbar.css'
 
 const NavBar = ({ onNavItemSelect }) => {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">YOSEF DAVID GIRALDO SALAZAR</Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link onClick={() => onNavItemSelect('aboutMe')}>About Me</Nav.Link> <br />
-        <Nav.Link onClick={() => onNavItemSelect('experience')}>Experience</Nav.Link> <br />
-        <Nav.Link onClick={() => onNavItemSelect('projects')}>Projects</Nav.Link>
-      </Nav>
+    <Navbar>
+      <h1>YOSEF DAVID GIRALDO SALAZAR</h1>
+      {/* <Navbar.Brand href="#home">YOSEF DAVID GIRALDO SALAZAR</Navbar.Brand> */}
+      <p>Engineer / Full Stack Developer / MBA</p>
+      <div>
+        <Nav.Link onClick={() => onNavItemSelect('aboutMe')} className='link'>| About Me |</Nav.Link>
+        <Nav.Link onClick={() => onNavItemSelect('experience')} className='link'> Experience |</Nav.Link>
+        <Nav.Link onClick={() => onNavItemSelect('projects')} className='link'> Projects |</Nav.Link>
+      </div>
     </Navbar>
   );
 };
