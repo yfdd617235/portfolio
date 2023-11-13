@@ -1,19 +1,29 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import * as Icon from 'react-icons/fa'
 import './navbar.css'
 
 const NavBar = ({ onNavItemSelect }) => {
   return (
-    <Navbar>
-      <h1>YOSEF DAVID GIRALDO SALAZAR</h1>
-      {/* <Navbar.Brand href="#home">YOSEF DAVID GIRALDO SALAZAR</Navbar.Brand> */}
-      <p>Engineer / Full Stack Developer / MBA</p>
+    <div className='nav-info'>
       <div>
-        <Nav.Link onClick={() => onNavItemSelect('aboutMe')} className='link'>| About Me |</Nav.Link>
-        <Nav.Link onClick={() => onNavItemSelect('experience')} className='link'> Experience |</Nav.Link>
-        <Nav.Link onClick={() => onNavItemSelect('projects')} className='link'> Projects |</Nav.Link>
+        <h1>YOSEF DAVID GIRALDO SALAZAR</h1>
+        {/* <Navbar.Brand href="#home">YOSEF DAVID GIRALDO SALAZAR</Navbar.Brand> */}
+        <p>Engineer / Full Stack Developer / MBA</p>
+      </div> <br />
+
+      <div>
+        <Nav.Link className='link' onClick={() => onNavItemSelect('aboutMe')} >About Me</Nav.Link>
+        <Nav.Link className='link' onClick={() => onNavItemSelect('experience')} >Experience</Nav.Link>
+        <Nav.Link className='link' onClick={() => onNavItemSelect('projects')} >Projects</Nav.Link>
       </div>
-    </Navbar>
+
+      <div className='contact-icons'>
+        <a className='icon-link' href="https://api.whatsapp.com/send?phone=573104221653" target="_blank" rel="noreferrer"><Icon.FaWhatsapp /></a>
+        <a className='icon-link' href="https://github.com/yfdd617235" target="_blank" rel="noreferrer"><Icon.FaGithub /></a>
+        <a className='icon-link' href="https://github.com/yfdd617235" target="_blank" rel="noreferrer"><Icon.FaLinkedin /></a>
+      </div>
+    </div>
   );
 };
 

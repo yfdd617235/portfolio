@@ -1,0 +1,37 @@
+.projects{
+    /* border: solid; */
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.title{
+    color: white;
+}
+
+.info-p{
+    color: rgb(109, 109, 109);
+}
+
+.icon-link-p:hover{
+    color: white;
+}
+
+.icon-link-p{
+    color: gray;
+    font-size: 20px;
+}
+
+.contact-icons-p{
+    /* border: solid blue; */
+    display: flex;
+    justify-content:space-between;
+    width: 15%;
+}
+
+img {
+    width: 25%;
+    height: 100%;
+    object-fit: fill;
+    padding: 5%;
+    padding-left: 0;
+    }

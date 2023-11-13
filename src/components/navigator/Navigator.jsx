@@ -35,8 +35,9 @@ const Navigator = () => {
       <div className='left-col'>
         <NavBar onNavItemSelect={handleNavItemSelect} />
       </div>
+
       <div className='right-col'>
-        <div className='right-content'>
+        {/* <div className='right-content'> */}
           <div ref={aboutMeRef}>
             <AboutMe />
           </div>
@@ -46,8 +47,9 @@ const Navigator = () => {
           <div ref={projectsRef}>
             <Projects />
           </div>
-        </div>
+        {/* </div> */}
       </div>
+
     </div>
   );
 };
