@@ -1,24 +1,25 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import {toast} from 'react-toastify'
-import * as Icon from 'react-icons/fa'
+import { toast} from 'react-toastify';
+import * as Icon from 'react-icons/fa';
+import Button from 'react-bootstrap/Button';
 import './navbar.css'
 
 function mailInfo (){
-  toast.success('User Logged!', {
-    position: 'top-right',
-    autoClose: 3500,
+  toast.success('Email: yosefdavid91@gmail.com', {
+    position: 'top-center',
+    autoClose: 10000,
     hideProgressBar: false,
-    closeOnClick: true,
+    closeOnClick: false,
     pauseOnHover: true,
     draggable: true,
     progress: undefined,
-    theme: 'colored'
-  })
-  alert("my mail is")
+    theme: 'colored',
+  });
 }
 const NavBar = ({ onNavItemSelect }) => {
   return (
+    <>
     <div className='nav-info'>
       <div>
         <h1>YOSEF DAVID GIRALDO SALAZAR</h1>
@@ -35,9 +36,10 @@ const NavBar = ({ onNavItemSelect }) => {
       <div className='contact-icons'>
         <a className='icon-link' href="https://api.whatsapp.com/send?phone=573104221653" target="_blank" rel="noreferrer"><Icon.FaWhatsapp /></a>
         <a className='icon-link' href="https://github.com/yfdd617235" target="_blank" rel="noreferrer"><Icon.FaGithub /></a>
-        <a className='icon-link' href="/" onClick={mailInfo} rel="noreferrer"><Icon.FaMailBulk /></a>
+        <Button className='icon-link' onClick={mailInfo} rel="noreferrer"><Icon.FaMailBulk /></Button>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,6 +3,9 @@ import NavBar from '../navBar/NavBar';
 import AboutMe from '../aboutme/AboutMe';
 import Projects from '../projects/Projects';
 import Experience from '../experience/Experience';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import './navigator.css';
 
 const Navigator = () => {
@@ -32,6 +35,7 @@ const Navigator = () => {
 
   return (
     <div className='screem'>
+      <ToastContainer />
       <div className='left-col'>
         <NavBar onNavItemSelect={handleNavItemSelect} />
       </div>
