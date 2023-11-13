@@ -14,15 +14,15 @@
     text-decoration: none;
     /* color: blue; */
     padding: 1%;
-    animation: changeColor 3s infinite alternate;
+    animation: changeColor 1s infinite alternate;
 }
 
 @keyframes changeColor {
     from {
-        color: white; /* Empieza con el color azul */
+        color: white;
       }
       to {
-        color: rgb(88, 88, 88)/* Termina con el color blanco */
+        color: gray;
       }
 }
 
@@ -42,7 +42,7 @@
 }
 
 .icon-link{
-    color: gray;
+    color: rgb(42, 42, 132);
     font-size: 25px;
 }
 

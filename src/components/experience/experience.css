@@ -11,12 +11,12 @@
 }
 
 .info-exp{
-    color: gray;
+    color: white;
     flex: 1;
 }
 
 .info-cod{
-    color: rgb(156, 153, 171);
+    color: rgba(0, 17, 255, 0.669);
 }
 .row{
     display: flex;
