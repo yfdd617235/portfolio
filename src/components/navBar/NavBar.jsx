@@ -1,8 +1,22 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
+import {toast} from 'react-toastify'
 import * as Icon from 'react-icons/fa'
 import './navbar.css'
 
+function mailInfo (){
+  toast.success('User Logged!', {
+    position: 'top-right',
+    autoClose: 3500,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: 'colored'
+  })
+  alert("my mail is")
+}
 const NavBar = ({ onNavItemSelect }) => {
   return (
     <div className='nav-info'>
@@ -21,7 +35,7 @@ const NavBar = ({ onNavItemSelect }) => {
       <div className='contact-icons'>
         <a className='icon-link' href="https://api.whatsapp.com/send?phone=573104221653" target="_blank" rel="noreferrer"><Icon.FaWhatsapp /></a>
         <a className='icon-link' href="https://github.com/yfdd617235" target="_blank" rel="noreferrer"><Icon.FaGithub /></a>
-        <a className='icon-link' href="https://github.com/yfdd617235" target="_blank" rel="noreferrer"><Icon.FaLinkedin /></a>
+        <a className='icon-link' href="/" onClick={mailInfo} rel="noreferrer"><Icon.FaMailBulk /></a>
       </div>
     </div>
   );
