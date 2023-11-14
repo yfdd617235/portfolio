@@ -8,7 +8,7 @@
 }
 
 .link{
-    /* border: solid yellow; */
+    border: 1px solid #040b1e;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -30,7 +30,7 @@
     /* border: solid blue; */
     display: flex;
     justify-content:space-between;
-    width: 30%;
+    width: 50%;
 }
 
 .link:hover{
