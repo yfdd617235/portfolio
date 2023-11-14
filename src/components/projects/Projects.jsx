@@ -1,5 +1,6 @@
 import React from 'react'
 import * as Icon from 'react-icons/fa'
+import imgP6 from './imgs/imgP6.png'
 import imgP5 from './imgs/imgP5.png'
 import imgP4 from './imgs/imgP4.png'
 import imgP3 from './imgs/imgP3.png'
@@ -11,6 +12,17 @@ function Projects() {
     return (
         <div className='projects'>
             <h4>Projects</h4>
+
+            <div className='row'>
+            <img className="d-block w-100 img-fluid" src={imgP6} alt="First slide" />
+                <div className='info-exp'>
+                    <h4 className='title'>Private Project - Panamerican Private Investments</h4>
+                    <p >This project is a collection of source code focused on algorithmic trading and artificial intelligence. It provides implementations of algorithms and automated trading strategies that use AI techniques such as machine learning and deep learning to make decisions in the financial markets. </p>
+                    <div className='contact-icons-p'>
+                        <a className='icon-link-p' href="https://indexpanamericanprivateinvestment.netlify.app/wlkngoi3tgi34hg.html" target="_blank" rel="noreferrer"><Icon.FaLink /></a>
+                    </div>
+                </div>
+            </div>
 
             <div className='row'>
             <img className="d-block w-100 img-fluid" src={imgP5} alt="First slide" />
